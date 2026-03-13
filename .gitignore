@@ -63,3 +63,4 @@ vgcore.*
 
 # GDB
 .gdb_history
+main.exe
