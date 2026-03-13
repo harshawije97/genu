@@ -1,0 +1,65 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled binaries / executables
+*.exe
+*.out
+*.app
+a.out
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+build/
+
+# Make
+Makefile.in
+
+# Autotools
+aclocal.m4
+autom4te.cache/
+autoscan.log
+configure
+configure.scan
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Valgrind
+vgcore.*
+
+# GDB
+.gdb_history
