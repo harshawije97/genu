@@ -25,10 +25,10 @@ int main()
     float applePiePrice = 200.00;
 
     printf("=== Welcome to Charles Bakery 🥐 ===\n---- Select from the Menu -----\n");
-    printf("> Donut Chocolate Flavour N043 || Price: %.2f\n", donutCPrice);
-    printf("> Fish Paties N056 || Price: %.2f\n", fishPatPrice);
-    printf("> Chicken Pastry C093 || Price: %.2f\n", chickenPasPrice);
-    printf("> Apple pie E023 || Price: %.2f\n", applePiePrice);
+    printf("> Donut Chocolate Flavour --- N043 || Price: %.2f\n", donutCPrice);
+    printf("> Hot Dog --- N056 || Price: %.2f\n", fishPatPrice);
+    printf("> Chicken Pastry --- C093 || Price: %.2f\n", chickenPasPrice);
+    printf("> Apple pie --- E023 || Price: %.2f\n", applePiePrice);
 
     printf("Enter item number to select:(You can only buy 2 items at a time)");
     scanf("%10s", inputItemOne);
@@ -40,14 +40,14 @@ int main()
     {
         prices[nextValue] = donutCPrice;
         nextValue++;
-        printf("Donut Chocolate ADDED...\n");
+        printf("Donut Chocolate added...\n");
     }
     if (
         strcmp(inputItemOne, fishPat) == 0 || strcasecmp(inputItemTwo, fishPat) == 0)
     {
         prices[nextValue] = fishPatPrice;
         nextValue++;
-        printf("Fish Paties added...\n");
+        printf("Hot Dog added...\n");
     }
     if (
         strcmp(inputItemOne, chickenPas) == 0 || strcasecmp(inputItemTwo, chickenPas) == 0)
@@ -67,7 +67,7 @@ int main()
     printf("==== All items are inserted ====\n\n");
     printf("Calculating....\n");
 
-    float accumulator = 0.0;
+    float accumulator = 0.0f;
     for (int i = 0; i < lengthOfPricesArray; i++)
     {
         accumulator += prices[i];
